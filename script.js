@@ -47,7 +47,7 @@ let songs = [
         album: "Single",
         albumArtUrl: "https://beele-borondo-2025.playurbano.com/wp-content/uploads/2025/05/Beele-Algo-Bueno.jpg",
         audioSrc: "audio/No tiene sentido.mp3",
-        videoBgSrc: "videos/Jonas-Martha.mp4", // Path video background khusus lagu ini
+        videoBgSrc: "videos/Jonas_Martha.mp4", // Path video background khusus lagu ini
         // Lirik dengan timestamp dalam detik
         lyrics: [
             { time: 7, text: "Baby, ¿qué tú espera'?" },
@@ -96,7 +96,59 @@ let songs = [
             { time: 140, text: "No tiene sentido" },
             { time: 143, text: "No tiene sentido" }
         ]
-    }
+    },
+    {
+        id: 2,
+        title: "No tiene sentido",
+        artist: "Beéle",
+        album: "Single",
+        albumArtUrl: "https://beele-borondo-2025.playurbano.com/wp-content/uploads/2025/05/Beele-Algo-Bueno.jpg",
+        audioSrc: "audio/Mi refe.mp3",
+        videoBgSrc: "videos/mi_refe.mp4", // Path video background khusus lagu ini
+        // Lirik dengan timestamp dalam detik
+        lyrics: [
+    { time: 17, text: "To' el mundo ya supone que tú y yo somo' algo (oh)" },
+    { time: 24, text: "Confirman en la calle que contigo es que salgo (uh)" },
+    { time: 30, text: "¿Entonce' pa' qué mentirno' má'? (Ah)" },
+    { time: 33, text: "No sé pa' qué seguir disimulando más (no)" },
+    { time: 37, text: "Qué importe un culo lo que piensen los demás (ay-yeah)" },
+    { time: 41, text: "Tú y yo nacimos pa' estar juntos" },
+    { time: 44, text: "Yo me pregunto" },
+    { time: 46, text: "¿Pa' qué putas esconderno'?" },
+    { time: 49, text: "Dejemo' tanto misterio para verno'" },
+    { time: 52, text: "Yo te gusto, tú me gustas" },
+    { time: 54, text: "Eso hace rato se sabe" },
+    { time: 57, text: "Delante de la gente bésame" },
+    { time: 60, text: "¿Pa' qué putas esconderno'?" },
+    { time: 63, text: "Dejemo' tanto misterio para verno'" },
+    { time: 66, text: "Yo te gusto, tú me gustas" },
+    { time: 68, text: "Eso hace rato se sabe" },
+    { time: 71, text: "Delante de la gente bésame" },
+    { time: 74, text: "Vo'a presumir que estás dura" },
+    { time: 77, text: "Yo tu gángster, tú mi chula" },
+    { time: 80, text: "Contigo me pasa" },
+    { time: 82, text: "Que no me importa lo que comenten" },
+    { time: 85, text: "Si nos llegan a la altura" },
+    { time: 87, text: "Tienes vibra de alma pura" },
+    { time: 89, text: "Para el mal, ella es mi cura" },
+    { time: 90, text: "Su cintura está demente" },
+    { time: 93, text: "Yo me enamoré, eh, eh, eh, eh" },
+    { time: 96, text: "De ti más me enamoro, oh, oh, oh, oh (ah)" },
+    { time: 101, text: "Pon la espalda en la pared, eh, eh, eh, eh (eoh)" },
+    { time: 104, text: "Sin pensar que alguien nos vio, oh, oh, oh, oh" },
+    { time: 108, text: "De ti yo me enamoré, eh, eh, eh, eh (aye)" },
+    { time: 111, text: "De ti más me enamoro, oh, oh, oh, oh" },
+    { time: 116, text: "Pon la espalda en la pared, eh, eh, eh, eh" },
+    { time: 119, text: "Sin pensar que alguien nos vio, oh, oh, oh, oh (no, no)" },
+    { time: 123, text: "¿Pa' qué putas esconderno'?" },
+    { time: 127, text: "Dejemo' tanto misterio para verno'" },
+    { time: 130, text: "Yo te gusto, tú me gustas" },
+    { time: 132, text: "Eso hace rato se sabe" },
+    { time: 135, text: "Delante de la gente bésame" },
+    { time: 138, text: "¿Pa' qué putas esconderno'?" },
+    { time: 141, text: "O-O-Ovy On The Drums" }
+]
+    },
     
 ];
 
