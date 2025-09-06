@@ -45,7 +45,7 @@ let songs = [
         title: "No tiene sentido",
         artist: "Beéle",
         album: "Single",
-        albumArtUrl: "https://i.ytimg.com/vi/fJLQCf4mFP0/hqdefault.jpg",
+        albumArtUrl: "https://beele-borondo-2025.playurbano.com/wp-content/uploads/2025/05/Beele-Algo-Bueno.jpg",
         audioSrc: "audio/No tiene sentido.mp3",
         videoBgSrc: "videos/Jonas-Martha.mp4", // Path video background khusus lagu ini
         // Lirik dengan timestamp dalam detik
