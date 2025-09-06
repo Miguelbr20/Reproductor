@@ -99,8 +99,8 @@ let songs = [
     },
     {
         id: 2,
-        title: "No tiene sentido",
-        artist: "Beéle",
+        title: "Mi refe",
+        artist: "Beéle y Ovy On The Drums",
         album: "Single",
         albumArtUrl: "https://beele-borondo-2025.playurbano.com/wp-content/uploads/2025/05/Beele-Algo-Bueno.jpg",
         audioSrc: "audio/Mi refe.mp3",
