@@ -5,18 +5,18 @@ const playerPage = document.getElementById('playerPage');
 const songListElement = document.getElementById('songList');
 
 const backToHomeFromDetailBtn = document.getElementById('backToHomeFromDetailBtn');
-const backToHomeBtn = document.getElementById('backToHomeBtn'); // Tombol kembali dari player ke home
+const backToHomeBtn = document.getElementById('backToHomeBtn'); 
 const bodyElement = document.body;
 
 const backgroundVideoContainer = document.querySelector('.video-background-container');
 const backgroundVideo = document.getElementById('backgroundVideo');
 
-// Elemen untuk Halaman Detail Lagu (tidak akan langsung digunakan saat klik lagu, tapi tetap di-load)
+
 const detailAlbumArt = document.getElementById('detailAlbumArt');
 const detailTrackTitle = document.getElementById('detailTrackTitle');
 const detailTrackArtist = document.getElementById('detailTrackArtist');
 const detailAlbumName = document.getElementById('detailAlbumName');
-const playFromDetailBtn = document.getElementById('playFromDetailBtn'); // Tombol play di halaman detail
+const playFromDetailBtn = document.getElementById('playFromDetailBtn'); 
 
 const audioPlayer = document.getElementById('audioPlayer');
 const albumArtPlayer = document.getElementById('albumArt');
@@ -35,10 +35,9 @@ const playerNextBtn = document.getElementById('playerNextBtn');
 const playerRepeatBtn = document.getElementById('playerRepeatBtn');
 const playerShuffleBtn = document.getElementById('playerShuffleBtn');
 const playerVolumeSlider = document.getElementById('playerVolumeSlider');
-const playerSpeedSlider = document.getElementById('playerSpeedSlider'); // Tambahkan ini
-const currentSpeedDisplay = document.getElementById('currentSpeedDisplay'); // Tambahkan ini
+const playerSpeedSlider = document.getElementById('playerSpeedSlider'); 
+const currentSpeedDisplay = document.getElementById('currentSpeedDisplay'); 
 
-// App State
 let songs = [
     {
         id: 1,
