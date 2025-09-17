@@ -913,6 +913,51 @@ let songs = [
     { time: 169, text: "Por eso me pierdo la vida y te busco" }
 ]
     },
+    {
+        id: 16,
+        title: "Numb",
+        artist: "Linkin Park",
+        album: "Single",
+        albumArtUrl: "",
+        audioSrc: "audio/Numb.mp3",
+        videoBgSrc: "https://i.pinimg.com/1200x/94/f1/3c/94f13cde2582e597f200c176d624c9e1.jpg", 
+    lyrics: [
+    { time: 23, text: "I'm tired of being what you want me to be" },
+    { time: 26, text: "Feeling so faithless, lost under the surface" },
+    { time: 29, text: "I don't know what you're expecting of me" },
+    { time: 32, text: "Put under the pressure of walking in your shoes" },
+    { time: 36, text: "(Caught in the undertow, just caught in the undertow)" },
+    { time: 39, text: "Every step that I take is another mistake to you" },
+    { time: 42, text: "(Caught in the undertow, just caught in the undertow)" },
+    { time: 46, text: "I've become so numb, I can't feel you there" },
+    { time: 49, text: "Become so tired, so much more aware" },
+    { time: 52, text: "I'm becoming this, all I want to do" },
+    { time: 55, text: "Is be more like me and be less like you" },
+    { time: 60, text: "Can't you see that you're smothering me?" },
+    { time: 63, text: "Holding too tightly, afraid to lose control" },
+    { time: 66, text: "'Cause everything that you thought I would be" },
+    { time: 69, text: "Has fallen apart right in front of you" },
+    { time: 73, text: "(Caught in the undertow, just caught in the undertow)" },
+    { time: 76, text: "Every step that I take is another mistake to you" },
+    { time: 79, text: "(Caught in the undertow, just caught in the undertow)" },
+    { time: 82, text: "And every second I waste is more than I can take" },
+    { time: 86, text: "I've become so numb, I can't feel you there" },
+    { time: 89, text: "Become so tired, so much more aware" },
+    { time: 92, text: "I'm becoming this, all I want to do" },
+    { time: 95, text: "Is be more like me and be less like you" },
+    { time: 100, text: "And I know I may end up failing too" },
+    { time: 103, text: "But I know you were just like me" },
+    { time: 106, text: "With someone disappointed in you" },
+    { time: 110, text: "I've become so numb, I can't feel you there" },
+    { time: 113, text: "Become so tired, so much more aware" },
+    { time: 116, text: "I'm becoming this, all I want to do" },
+    { time: 119, text: "Is be more like me and be less like you" },
+    { time: 124, text: "I've become so numb, I can't feel you there" },
+    { time: 126, text: "(I'm tired of being what you want me to be)" },
+    { time: 129, text: "I've become so numb, I can't feel you there" },
+    { time: 131, text: "(I'm tired of being what you want me to be)" }
+]
+    }
 
 ];
 
