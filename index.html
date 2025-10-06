@@ -719,7 +719,7 @@
             { time: 140, text: "No tiene sentido" },
             { time: 143, text: "No tiene sentido" }
         ]
-    },,
+    },
      {
         id: 2,
         title: "Mi refe",
@@ -6591,7 +6591,7 @@
     },
     {
         id: 91,
-        title: "Lisstte no quiero más peleas",
+        title: "Lissette no quiero más peleas",
         artists: ["Plan B","Tony dize"],
         album: "Single",
         genre: "Reggaetón",
@@ -7200,16 +7200,42 @@
             document.getElementById('albumsTab').classList.add('active');
         });
 
-        // Filter buttons for albums
-        document.getElementById('filterArtist').addEventListener('click', function() {
+        // Tabs
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.dataset.tab;
+                if (!tabName) return; // Evitar problemas con botones de filtro
+                
+                document.querySelectorAll('.nav-tab').forEach(t => {
+                    if (t.dataset.tab) t.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(tabName + 'Tab').classList.add('active');
+                
+                if (tabName === 'playlist') {
+                    renderPlaylist();
+                }
+            });
+        });
+
+        // Filter buttons for albums (tienen que ser independientes)
+        let currentFilter = 'artist';
+        
+        document.getElementById('filterArtist').addEventListener('click', function(e) {
+            e.stopPropagation();
             document.getElementById('filterArtist').classList.add('active');
             document.getElementById('filterGenre').classList.remove('active');
+            currentFilter = 'artist';
             renderAlbums('artist');
         });
 
-        document.getElementById('filterGenre').addEventListener('click', function() {
+        document.getElementById('filterGenre').addEventListener('click', function(e) {
+            e.stopPropagation();
             document.getElementById('filterGenre').classList.add('active');
             document.getElementById('filterArtist').classList.remove('active');
+            currentFilter = 'genre';
             renderAlbums('genre');
         });
 
@@ -7248,6 +7274,11 @@
                 item.querySelector('.playlist-btn').addEventListener('click', () => {
                     togglePlaylist(song.id);
                     renderSongs();
+                    // Si estamos en la pestaña de playlist, actualizar también
+                    const playlistTab = document.getElementById('playlistTab');
+                    if (playlistTab.classList.contains('active')) {
+                        renderPlaylist();
+                    }
                 });
 
                 list.appendChild(item);
@@ -7310,7 +7341,7 @@
         }
 
         function renderAll() {
-            renderAlbums();
+            renderAlbums('artist');
             renderSongs();
         }
 
@@ -7464,21 +7495,7 @@
             }
         });
 
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', function() {
-                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                
-                this.classList.add('active');
-                const tabName = this.dataset.tab;
-                document.getElementById(tabName + 'Tab').classList.add('active');
-                
-                if (tabName === 'playlist') {
-                    renderPlaylist();
-                }
-            });
-        });
-
+        // Init
         loadUsers();
         audio.volume = 0.8;
     </script>
